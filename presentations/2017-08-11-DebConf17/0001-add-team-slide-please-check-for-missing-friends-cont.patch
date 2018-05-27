@@ -1,0 +1,90 @@
+From c6f8d045517bd7406d6946364330d905932ac85b Mon Sep 17 00:00:00 2001
+From: Holger Levsen <holger@layer-acht.org>
+Date: Fri, 11 Aug 2017 14:40:27 -0400
+Subject: [PATCH] add team slide, please check for missing friends/contributors
+
+Signed-off-by: Holger Levsen <holger@layer-acht.org>
+---
+ 2017-08-11-DebConf17/TODO       |  3 ---
+ 2017-08-11-DebConf17/index.html | 51 +++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 51 insertions(+), 3 deletions(-)
+
+diff --git a/2017-08-11-DebConf17/TODO b/2017-08-11-DebConf17/TODO
+index 02d119d..11b9185 100644
+--- a/2017-08-11-DebConf17/TODO
++++ b/2017-08-11-DebConf17/TODO
+@@ -2,9 +2,6 @@ h01ger
+ 	basel / sfc logo
+ 	add thanks
+ 	policy
+-	namelist
+-		add justin cappos
+-		bernhard
+ 	one third process
+ 	mention r.d.n
+ 		add graph?
+diff --git a/2017-08-11-DebConf17/index.html b/2017-08-11-DebConf17/index.html
+index 0bc2529..7298ed0 100644
+--- a/2017-08-11-DebConf17/index.html
++++ b/2017-08-11-DebConf17/index.html
+@@ -86,6 +86,57 @@
+       </section>
+ 
+       <section>
++        <h3>The incomplete team, with apologies to $YOU</h3>
++<p>
++    akira,
++    Alexis Bienvenüe,
++    Alexander Couzens,
++    Andrew Ayer,
++    Asheesh Laroia,
++    Bernhard M. Wiedemann,
++    Boyuan Yang,
++    Ceridwen,
++    Chris Lamb,
++    Chris West,
++    Christoph Berg,
++    Clint Adams,
++    Dafydd Harries,
++    Daniel Kahn Gillmor,
++    Daniel Shahaf,
++    Daniel Stender,
++    David Suarez,
++    Dhole,
++    Drew Fisher,
++    Emmanuel Bourg,
++    Emanuel Bronshtein,
++    Esa Peuha,
++    Fabian Wolff,
++    Guillem Jover,
++    Hans-Christoph Steiner,
++    Harlan Lieberman-Berg,
++    Helmut Grohne,
++    Holger Levsen,
++    HW42,
++    Intrigeri,
++    Jelmer Vernooij,
++    josch,
++    Juan Picca,
++    Justin Cappos,
++    Lunar,
++    Maria Glukhova,
++    Mathieu Bridon,
++    Mattia Rizzolo,
++    Nicolas Boulenguez,
++    Niels Thykier,
++    Niko Tyni,
++    Paul Wise,
++    Peter De Wachter,
++    Philip Rinn,
++    Reiner Herrmann,
++</p>
++  </section>
++
++      <section>
+         <h3>Quick Introduction to R-B concept</h3>
+       </section>
+ 
+-- 
+2.11.0
+

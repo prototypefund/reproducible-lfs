@@ -1,0 +1,78 @@
+From b45464e8040ef3eedec481a157dbdc6ffc2d9614 Mon Sep 17 00:00:00 2001
+From: Chris Lamb <lamby@debian.org>
+Date: Fri, 11 Aug 2017 14:57:35 -0400
+Subject: [PATCH] Tidy side-benefits slide.
+
+---
+ 2017-08-11-DebConf17/index.html | 21 ++++++++++-----------
+ 1 file changed, 10 insertions(+), 11 deletions(-)
+
+diff --git a/2017-08-11-DebConf17/index.html b/2017-08-11-DebConf17/index.html
+index 06a6923..5b3474a 100644
+--- a/2017-08-11-DebConf17/index.html
++++ b/2017-08-11-DebConf17/index.html
+@@ -180,8 +180,7 @@
+       </section>
+ 
+       <section>
+-        <h3>Side effects of reproducible builds effort</h3>
+-        <h2> Catch crazy QA bugs </h2>
++        <h3>Technical &amp; other security benefits</h3>
+       </section>
+ 
+       <section>
+@@ -191,7 +190,8 @@
+ $build-&gt;config_data(OpenIDConsumerSecret=&gt;int(1e15*rand()));
+ </code></pre>
+ 
+-<pre class="fragment"><code># /usr/share/perl5/GBrowse/ConfigData.pm
++        <div class="fragment">
++          <pre><code># /usr/share/perl5/GBrowse/ConfigData.pm
+ {
+  'OpenIDConsumerSecret' =&gt; '639098210478536',
+  'cgibin' =&gt; '/usr/lib/cgi-bin/gbrowse',
+@@ -200,9 +200,10 @@ $build-&gt;config_data(OpenIDConsumerSecret=&gt;int(1e15*rand()));
+ },
+ </code></pre>
+ 
+-        <ul>
+-          <li class="fragment">Every installation of shares the same secret.</li>
+-        </ul>
++          <ul>
++            <li>Every installation shares the same secret!</li>
++          </ul>
++        </div>
+ 
+         <p class="fragment">
+           <a href="https://bugs.debian.org/833885">#833885 (gbrowse)</a>
+@@ -212,16 +213,14 @@ $build-&gt;config_data(OpenIDConsumerSecret=&gt;int(1e15*rand()));
+       <section>
+         <h3>Random chars in manpages</h3>
+ 
+-        <ul>
+-          <li class="fragment">Randomly inserts characters into generated manpages</li>
+-        </ul>
+-
+         <pre class="fragment"><code>-This manual page documents the usageoof WikipediaFS.
+ +This manual page documents the usage of WikipediaFS.
+ </code></pre>
+ 
+         <pre class="fragment"><code>memcpy(&amp;buf[1], &amp;buf[2], strlen(buf)-1);</code></pre>
+ 
++        <pre class="fragment"><code>memcpy(3): The memory areas must not overlap</code></pre>
++
+         <ul>
+           <li class="fragment">"<code> n\\011</code>" &rarr; "<code>\111</code>" &rarr; maps to capital "I"</li>
+         </ul>
+@@ -240,7 +239,7 @@ $build-&gt;config_data(OpenIDConsumerSecret=&gt;int(1e15*rand()));
+ 
+ <pre class="fragment"><code>x = f(u('abc'), 16)
+ y = f(u('abc'), 16)
+-self.assertEqual(sorted(set(x)), [u('a'),u('b'),u('c')])
++self.assertEqual(sorted(set(x)), [u('a'), u('b'), u('c')])
+ </code></pre>
+ 
+ <pre class="fragment"><code>AssertionError: Lists differ: [u'a', u'b'] != [u'a', u'b', u'c']</code></pre>
+-- 
+2.11.0
+

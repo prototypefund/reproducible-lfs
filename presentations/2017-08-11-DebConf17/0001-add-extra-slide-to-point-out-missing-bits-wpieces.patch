@@ -1,0 +1,54 @@
+From ccfa15e27a365fc2d5653c0e578f266433388f84 Mon Sep 17 00:00:00 2001
+From: Holger Levsen <holger@layer-acht.org>
+Date: Fri, 11 Aug 2017 15:00:29 -0400
+Subject: [PATCH] add extra slide to point out missing bits^wpieces
+
+Signed-off-by: Holger Levsen <holger@layer-acht.org>
+---
+ 2017-08-11-DebConf17/TODO       |  8 ++------
+ 2017-08-11-DebConf17/index.html | 10 ++++++++++
+ 2 files changed, 12 insertions(+), 6 deletions(-)
+
+diff --git a/2017-08-11-DebConf17/TODO b/2017-08-11-DebConf17/TODO
+index 02d119d..2096ccb 100644
+--- a/2017-08-11-DebConf17/TODO
++++ b/2017-08-11-DebConf17/TODO
+@@ -1,12 +1,8 @@
+ h01ger
+ 	basel / sfc logo
+-	add thanks
+ 	policy
+-	namelist
+-		add justin cappos
+-		bernhard
+-	one third process
+ 	mention r.d.n
+-		add graph?
++
++ 	mention funding in thanks
+ 	(logo contest, SPI)
+ 
+diff --git a/2017-08-11-DebConf17/index.html b/2017-08-11-DebConf17/index.html
+index fa8d7d7..474227a 100644
+--- a/2017-08-11-DebConf17/index.html
++++ b/2017-08-11-DebConf17/index.html
+@@ -180,6 +180,16 @@
+       </section>
+ 
+       <section>
++        <h3>How far we'll need to go</h3>
++        <table>
++          <tr><td>First rebuild in 2013</td><td>24% packages reproducible</td></tr>
++          <tr><td>August 2017</td><td>88% packages reproducible</td></tr>
++          <tr><td>sometime</td><td>100% packages reproducible</td></tr>
++          <tr><td>sometime</td><td>tools to actually verify that in practice</td></tr>
++        </table>		
++      </section>
++
++      <section>
+         <h3>Side effects of reproducible builds effort</h3>
+         <h2> Catch crazy QA bugs </h2>
+       </section>
+-- 
+2.11.0
+
